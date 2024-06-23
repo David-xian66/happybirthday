@@ -10,25 +10,34 @@
 
 <body>
     <!-- 头像 -->
-    <div class="cs">
-        <img src="touxiang.png" id="logo">
+    <div class="cs" style="margin-top: 75px;">
+        <img src="touxiang.jpg" id="logo1" class="logo">
+        <img src="mingcute--love-fill.png" id="love" class="love" style="top: 0px; margin-bottom: 13px;">
+        <img src="touxiang2.jpg" id="logo2" class="logo">
     </div>
     <canvas class="canvas" width="1820" height="905"></canvas>
     <!-- 出生计时 -->
     <p class="text">
-        TA来到这个世界已经 <br />
-        <span id="span_dt_dt"></span>
+        我的宝宝来到这个世界已经 <br />
+        <span id="span_dt_dt"></span><br />
+        我们已经 
+        <span id="span_dt_wm" style="color: red;""></span>
+        <img src="love.png" id="love_icon" class="love_icon">
     </p>
 </body>
 <!--  设定出生日期 -->
 <script type="text/javascript" src="time.js"></script>
+<!--  在一起 -->
+<script type="text/javascript" src="time_wm.js"></script>
+<!-- 爱心动画 -->
+<script type="text/javascript" src="love.js"></script>
 <!-- canvas动画 -->
 <script type="text/javascript" src="index.js"></script>
 <!-- 背景音乐 -->
 <audio id="music" src="./happybirthday.mp3" autoplay preload="auto" loop="loop">该浏览器不支持audio属性</audio>
 <!-- copyright -->
 <footer style="color: #BBE1FA; text-align:center;">
-    <font size="2" color=#BBE1FA>©2024 生日快乐 &nbsp 我的小可爱</font>
+    <font size="2" color=#BBE1FA>©2024 生日快乐 &nbsp 我的宝宝 <br /> By: Xian66_David &nbsp At: 2024.06.28 &nbsp PS:电脑访问体验更佳</font>
 </footer>
 
 </html>

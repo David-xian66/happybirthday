@@ -1,10 +1,21 @@
+function isDesktop() {
+    const userAgent = navigator.userAgent;
+    const mobileAgents = ["Android", "iPhone", "iPad", "iPod"];
+
+    return !mobileAgents.some(agent => userAgent.includes(agent));
+};
+
 var S = {
     init: function () {
         S.Drawing.init('.canvas');
         document.body.classList.add('body--ready');
             //想说什么
-            S.UI.simulate("祝你|生日快乐哟|#countdown 3|#rectangle 15x15|#circle 12 |#time");
-            S.Drawing.loop(function () {
+            if (isDesktop()) {
+                S.UI.simulate("宝宝～|生日快乐!|Happy|birthday|my|baby.|爱你呦~|#countdown 3|#rectangle 15x15|#circle 12 |❤️|#time");
+            } else {
+                S.UI.simulate("宝宝～|生日|快乐!|Happy|birthday|my|baby.|爱你呦|#countdown 3|#rectangle 15x15|#circle 12 |❤️|#time");
+            }
+                S.Drawing.loop(function () {
                 S.Shape.render();
             });
         }
